@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import {Button, Card, Container, Flex, Heading, Inset, Text} from "@radix-ui/themes";
-import { UpdateIcon, LightningBoltIcon, Share1Icon } from '@radix-ui/react-icons'
+import { UpdateIcon, LightningBoltIcon, Share2Icon } from '@radix-ui/react-icons'
 import React, {useState} from "react";
 
 const firstExercises = [
@@ -31,7 +31,7 @@ export default function Home() {
             {exercises.map((exercise, index) => (
               <Card key={index} className={styles.exerciseCard}>
                 <Flex direction="column" align="center" gapY="3">
-                  <Heading as="h2">{exercise.name}</Heading>
+                  <Heading as="h2" size="5">{exercise.name}</Heading>
                   <Flex gapX="6">
                     <Flex direction="column" align="center">
                       <Flex align="center" gapX="1"><LightningBoltIcon/><Text>{exercise.reps}</Text></Flex>
@@ -56,7 +56,7 @@ export default function Home() {
                 Add Exercise
               </Button>
               <Button size="3" variant="soft">
-                <Share1Icon /> Share
+                <Share2Icon /> Share
               </Button>
             </Flex>
           </Flex>
