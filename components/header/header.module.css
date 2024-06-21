@@ -1,0 +1,8 @@
+.root {
+  padding: var(--space-5) var(--space-5);
+}
+
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
