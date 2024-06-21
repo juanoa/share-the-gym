@@ -5,7 +5,6 @@ import {Flex, Theme} from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import './global.css'
 import {Header} from "@/components/header/header";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
