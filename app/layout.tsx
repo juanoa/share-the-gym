@@ -24,9 +24,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Theme appearance="light">
           <Flex gapY="4" direction="column">
-            <Head>
-              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-            </Head>
             <Header/>
             {children}
           </Flex>
