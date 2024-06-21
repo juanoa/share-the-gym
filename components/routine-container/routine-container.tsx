@@ -44,8 +44,8 @@ export const RoutineContainer: React.FC<Props> = ({routineValue}) => {
     <main>
       <Container size="2">
         <Flex direction="column" align="center" gapY="6">
-          <InputBox value={routine.name} onChange={handleUpdateName} maxWidth="100%">
-            <Heading as="h2" size="3" weight="regular">🏋️‍♂️ {routine.name}</Heading>
+          <InputBox value={routine.name} onChange={handleUpdateName} maxWidth="100%" size="2">
+            <Heading as="h2" size="5" weight="regular">🏋️‍♂️ {routine.name}</Heading>
           </InputBox>
           <Flex direction="column" align="center" gapY="4" className={styles.exercises}>
             {
