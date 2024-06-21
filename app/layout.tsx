@@ -5,6 +5,7 @@ import {Flex, Theme} from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import './global.css'
 import {Header} from "@/components/header/header";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Theme appearance="light">
           <Flex gapY="4" direction="column">
-            <Header />
+            <Head>
+              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+            </Head>
+            <Header/>
             {children}
           </Flex>
         </Theme>
